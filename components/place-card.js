@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'components/Image'
 
 import PropTypes from 'prop-types'
 
@@ -8,7 +9,7 @@ const PlaceCard = (props) => {
   return (
     <>
       <div className="container">
-        <img alt={props.image_alt} src={props.image} className="image" />
+        <Image alt={props.image_alt} src={props.image} className="image" />
         <div className="container1">
           <span className="text">{props.city}</span>
           <span className="text1">{props.description}</span>

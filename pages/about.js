@@ -1,7 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 
-import SolidButton from '../components/solid-button'
+import SolidButton from '../../components/solid-button'
 
 const About = () => {
   return (

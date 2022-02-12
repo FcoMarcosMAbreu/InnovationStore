@@ -1,19 +1,24 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'components/Image'
 
-import SolidButton from '../components/solid-button'
+import SolidButton from '../../components/solid-button'
 
-const ProductSpam = () => {
+const AwesomeHelmet = () => {
   return (
     <>
       <div className="container">
         <Head>
-          <title>Product/Spam - Innovation Store</title>
+          <title>Awesome-Helmet - Innovation Store</title>
           <meta
             name="description"
             content="Proof of Concept site to demonstrate my skills with NextJS, Supabase (PostgreSQL), SWR, Clouflare Pages and GitHub."
           />
-          <meta property="og:title" content="Product/Spam - Innovation Store" />
+          <meta
+            property="og:title"
+            content="Awesome-Helmet - Innovation Store"
+          />
           <meta
             property="og:description"
             content="Proof of Concept site to demonstrate my skills with NextJS, Supabase (PostgreSQL), SWR, Clouflare Pages and GitHub."
@@ -27,7 +32,7 @@ const ProductSpam = () => {
                 <span className="text">Home</span>
                 <span className="text01">About</span>
               </div>
-              <a
+              <Link
                 href="https://github.com/FcoMarcosMAbreu"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -37,7 +42,7 @@ const ProductSpam = () => {
                   button="Contact"
                   className="component"
                 ></SolidButton>
-              </a>
+              </Link>
             </div>
             <div data-type="BurgerMenu" className="burger-menu">
               <svg viewBox="0 0 1024 1024" className="burger-menu">
@@ -76,7 +81,7 @@ const ProductSpam = () => {
                   />
                 </span>
                 <div className="icons-container">
-                  <a
+                  <Link
                     href="https://instagram.com"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -88,8 +93,8 @@ const ProductSpam = () => {
                     >
                       <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
                     </svg>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="https://facebook.com"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -101,8 +106,8 @@ const ProductSpam = () => {
                     >
                       <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
                     </svg>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="https://twitter.com"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -114,20 +119,24 @@ const ProductSpam = () => {
                     >
                       <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </nav>
           <div className="hero">
-            <img src="/playground_assets/spam-1000w.jpg" className="image" />
+            <Image
+              src="/playground_assets/bmw-airflow-2-helmet7-1000w.jpg"
+              alt=""
+              className="image"
+            />
             <div className="content-container">
-              <h1 className="heading text07">Spam</h1>
-              <h2 className="subheading">
-                Leave your email in the coments to receive spam
-              </h2>
+              <h1 className="heading text07">Awesome Helmet</h1>
+              <h2 className="subheading">For whom feel itself awesome!</h2>
               <span className="text08">
-                <span>Feel free to say what you think about this.</span>
+                <span>
+                  Awesome people have the freedom to go anywhere with security.
+                </span>
               </span>
               <SolidButton button="Reviews"></SolidButton>
             </div>
@@ -162,7 +171,7 @@ const ProductSpam = () => {
             ></textarea>
             <SolidButton
               button="Send"
-              rootClassName="rootClassName2"
+              rootClassName="rootClassName1"
             ></SolidButton>
           </div>
         </div>
@@ -174,14 +183,14 @@ const ProductSpam = () => {
                 <span className="text16">About us</span>
                 <span className="text17">FAQ</span>
                 <span className="text18">Terms and conditions</span>
-                <a
+                <Link
                   href="https://github.com/FcoMarcosMAbreu"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="link4"
                 >
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
             <div className="follow-container1">
@@ -194,7 +203,7 @@ const ProductSpam = () => {
                 />
               </span>
               <div className="icons-container1">
-                <a
+                <Link
                   href="https://github.com/FcoMarcosMAbreu"
                   target="_blank"
                   rel="noreferrer noopener"
@@ -203,7 +212,7 @@ const ProductSpam = () => {
                   <svg viewBox="0 0 1024 1024" className="icon11">
                     <path d="M341.333 777.515c-36.907 7.509-61.995 5.163-79.787-0.469-9.856-3.115-18.389-7.509-26.197-12.885-17.536-12.117-31.019-28.8-47.744-50.005-15.189-19.243-36.267-47.232-66.176-62.976-7.893-4.181-16.469-7.552-25.771-9.899-22.869-5.717-46.037 8.192-51.755 31.061s8.192 46.037 31.061 51.755l6.613 2.56c10.752 5.675 20.779 17.237 38.997 40.363 15.616 19.797 36.523 46.848 66.261 67.371 14.165 9.771 30.336 18.176 49.024 24.064 30.379 9.6 65.067 11.947 105.515 5.76l-0.043 74.453c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-165.12c0-0.896-0.043-1.92-0.085-2.944-0.256-3.584-0.299-7.168-0.171-10.709 0.853-24.277 10.283-48.043 28.373-66.773 6.187-6.357 10.496-14.805 11.691-24.405 2.901-23.381-13.696-44.715-37.077-47.616-14.507-1.792-28.885-4.011-42.923-6.784-33.707-6.656-64.768-16.427-91.605-31.275-56.235-31.104-102.869-89.344-102.869-218.496-0.299-47.232 17.024-94.635 52.224-131.584 10.965-11.691 14.933-28.672 9.088-44.373-11.947-31.957-14.549-67.413-6.016-102.059 20.949 4.565 57.813 17.749 112.939 54.741 10.069 6.699 22.741 9.131 35.243 5.632 85.205-23.765 180.992-25.685 276.053 0.085 11.563 3.115 24.277 1.408 34.901-5.76 55.168-36.949 91.989-50.133 112.939-54.699 8.064 32.683 6.699 68.053-6.016 102.059-5.504 15.019-2.475 32.213 9.088 44.373 32.341 33.92 52.224 79.872 52.224 130.56 0 131.2-47.531 189.653-104.32 220.288-26.581 14.336-57.301 23.68-90.581 29.867-13.739 2.56-27.776 4.523-41.941 6.101-8.96 0.981-17.835 4.864-24.917 11.733-16.939 16.384-17.408 43.392-1.024 60.331 2.859 2.944 5.547 6.101 8.021 9.344 14.549 19.157 22.272 43.307 20.267 69.035 0 1.024-0.043 2.176-0.128 3.328v165.12c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-161.792c2.219-29.184-2.389-57.301-12.459-82.859 33.152-7.296 66.688-18.219 98.005-35.115 88.875-47.957 149.163-138.325 149.163-295.381 0-64.128-22.016-123.179-58.837-169.856 15.147-57.387 9.643-116.309-12.501-167.808-5.205-12.075-15.317-20.565-27.093-24.064-15.232-4.523-73.899-13.184-186.581 58.112-96.981-23.083-194.432-21.717-283.563-0.085-112.597-71.211-171.221-62.549-186.453-58.027-12.629 3.755-22.229 12.8-27.093 24.107-23.637 55.125-26.624 114.005-12.459 167.765-39.68 50.261-59.179 110.976-58.837 171.392 0 154.539 59.264 244.181 146.816 292.651 32.085 17.749 66.56 29.227 100.565 36.992-7.893 19.968-12.245 41.003-12.971 62.165-0.213 6.016-0.128 12.032 0.213 18.048z"></path>
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -570,4 +579,4 @@ const ProductSpam = () => {
   )
 }
 
-export default ProductSpam
+export default AwesomeHelmet

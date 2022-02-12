@@ -1,22 +1,21 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'components/Image'
 
-import SolidButton from '../components/solid-button'
+import SolidButton from '../../components/solid-button'
 
-const ProductAwesomeHelmet = () => {
+const ProductSpam = () => {
   return (
     <>
       <div className="container">
         <Head>
-          <title>Product/Awesome-Helmet - Innovation Store</title>
+          <title>Product/Spam - Innovation Store</title>
           <meta
             name="description"
             content="Proof of Concept site to demonstrate my skills with NextJS, Supabase (PostgreSQL), SWR, Clouflare Pages and GitHub."
           />
-          <meta
-            property="og:title"
-            content="Product/Awesome-Helmet - Innovation Store"
-          />
+          <meta property="og:title" content="Product/Spam - Innovation Store" />
           <meta
             property="og:description"
             content="Proof of Concept site to demonstrate my skills with NextJS, Supabase (PostgreSQL), SWR, Clouflare Pages and GitHub."
@@ -123,17 +122,14 @@ const ProductAwesomeHelmet = () => {
             </div>
           </nav>
           <div className="hero">
-            <img
-              src="/playground_assets/bmw-airflow-2-helmet7-1000w.jpg"
-              className="image"
-            />
+            <Image src="/playground_assets/spam-1000w.jpg" alt="" className="image" />
             <div className="content-container">
-              <h1 className="heading text07">Awesome Helmet</h1>
-              <h2 className="subheading">For whom feel itself awesome!</h2>
+              <h1 className="heading text07">Spam</h1>
+              <h2 className="subheading">
+                Leave your email in the coments to receive spam
+              </h2>
               <span className="text08">
-                <span>
-                  Awesome people have the freedom to go anywhere with security.
-                </span>
+                <span>Feel free to say what you think about this.</span>
               </span>
               <SolidButton button="Reviews"></SolidButton>
             </div>
@@ -168,7 +164,7 @@ const ProductAwesomeHelmet = () => {
             ></textarea>
             <SolidButton
               button="Send"
-              rootClassName="rootClassName1"
+              rootClassName="rootClassName2"
             ></SolidButton>
           </div>
         </div>
@@ -576,4 +572,4 @@ const ProductAwesomeHelmet = () => {
   )
 }
 
-export default ProductAwesomeHelmet
+export default ProductSpam
