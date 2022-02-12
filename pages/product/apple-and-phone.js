@@ -29,14 +29,14 @@ const AppleAndPhone = () => {
             <h1>Innovation Store</h1>
             <div className="right-side">
               <div className="links-container">
-                <Link href="/">
+                <Link href="/" passHref>
                   <span className="text">Home</span>
                 </Link>
-                <Link href="/about">
+                <Link href="/about" passHref>
                   <span className="text01">About</span>
                 </Link>
               </div>
-              <Link
+              <Link passHref
                 href="https://github.com/FcoMarcosMAbreu"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -80,7 +80,7 @@ const AppleAndPhone = () => {
                   Follow us on
                 </span>
                 <div className="icons-container">
-                  <Link
+                  <Link passHref
                     href="https://github.com/FcoMarcosMAbreu"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -149,7 +149,7 @@ const AppleAndPhone = () => {
             <h1>Innovation Store</h1>
             <div className="links-container2">
               <div className="container2">
-                <Link href="/about">
+                <Link href="/about" passHref>
                   <span className="text16">About</span>
                 </Link>
                 <span className="text17">FAQ</span>
@@ -169,7 +169,7 @@ const AppleAndPhone = () => {
                 Follow me on
               </span>
               <div className="icons-container1">
-                <Link
+                <Link passHref
                   href="https://github.com/FcoMarcosMAbreu"
                   target="_blank"
                   rel="noreferrer noopener"
